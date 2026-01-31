@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[DEMO] Barbearia Premium</title>
+    <style>
+        /* Reset e Estilo Clean */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+        body { background-color: #fff; color: #222; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+        
+        /* Barra de Aviso de Demo */
+        .demo-alert { position: fixed; bottom: 0; left: 0; width: 100%; background: #222; color: white; text-align: center; padding: 15px; z-index: 100; }
+        .demo-alert a { color: #4da6ff; text-decoration: none; font-weight: bold; }
+
+        /* Hero Section */
+        .hero { background: url('https://images.unsplash.com/photo-1503951914290-9b44577103f0?q=80&w=1000&auto=format&fit=crop') center/cover no-repeat; height: 70vh; display: flex; align-items: center; justify-content: center; position: relative; }
+        .hero::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); }
+        .hero-content { position: relative; z-index: 2; text-align: center; color: white; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 20px; font-weight: 700; letter-spacing: 1px; }
+        .hero p { font-size: 1.2rem; margin-bottom: 30px; }
+        
+        .btn-main { padding: 15px 40px; background: #fff; color: #222; text-decoration: none; font-weight: bold; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; }
+        .btn-main:hover { background: #eee; }
+
+        /* Serviços */
+        .services { padding: 60px 20px; background: #f9f9f9; text-align: center; }
+        .section-title { font-size: 2rem; margin-bottom: 40px; }
+        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; max-width: 1000px; margin: 0 auto; }
+        .service-item { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); text-align: left; }
+        .service-item h3 { font-size: 1.2rem; margin-bottom: 10px; display: flex; justify-content: space-between; }
+        .price { color: #0066cc; font-weight: bold; }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>BARBEARIA DO ZÉ</h1>
+            <p>Estilo clássico para o homem moderno.</p>
+            <a href="#" class="btn-main" onclick="alert('No site real, isso abriria o WhatsApp com o agendamento!'); return false;">Agendar Horário</a>
+        </div>
+    </div>
+
+    <section class="services">
+        <h2 class="section-title">Nossos Serviços</h2>
+        <div class="service-grid">
+            <div class="service-item">
+                <h3>Corte de Cabelo <span class="price">R$ 50</span></h3>
+                <p>Degradê, social ou na tesoura. Inclui lavagem e finalização.</p>
+            </div>
+            <div class="service-item">
+                <h3>Barba Completa <span class="price">R$ 40</span></h3>
+                <p>Modelagem com navalha, toalha quente e balm hidratante.</p>
+            </div>
+            <div class="service-item">
+                <h3>Combo Zé <span class="price">R$ 80</span></h3>
+                <p>Cabelo + Barba. O serviço completo com desconto.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="demo-alert">
+        <p>👋 Esta é uma <strong>Página de Demonstração</strong>. Imagine a sua marca aqui. <a href="index.html">Voltar ao Início</a></p>
+    </div>
+
+</body>
+</html>
